@@ -35,7 +35,7 @@ Evaluate the design of this class and explain why it leads to maintenance and ex
 ---
 
 **Claude:**
-I identified 5 design issues and wrote `design_evaluation.md` covering:
+Identified 5 design issues and wrote `design_evaluation.md` covering:
 
 1. **Open/Closed Principle violation** — Every new customer type requires modifying the existing `calculatePrice()` method. A well-designed system should allow extension without modifying existing code.
 
@@ -55,7 +55,7 @@ Now do Part 2 — refactor the class using the Strategy Pattern.
 ---
 
 **Claude:**
-I implemented the Strategy Pattern with the following files:
+Implemented the Strategy Pattern with the following files:
 
 - `PricingStrategy.java` — interface with `calculatePrice(double price)`
 - `RegularPricingStrategy.java` — returns the original price with no discount
@@ -74,7 +74,7 @@ Now do Part 3 — create a Driver class and Part 4 — development log.
 ---
 
 **Claude:**
-I created `Driver.java` that constructs a `PriceCalculator` with each strategy using `setStrategy()` and prints the results for a purchase price of 100.0. The output matched the required format exactly:
+Created `Driver.java` that constructs a `PriceCalculator` with each strategy using `setStrategy()` and prints the results for a purchase price of 100.0. The output matched the required format exactly:
 
 ```
 REGULAR: 100.0
