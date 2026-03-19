@@ -1,0 +1,3 @@
+# CRC Cards Delegation Explanation
+
+TaskManager collaborates with Task because its responsibilities — storing, adding, finding, and filtering tasks — require it to directly interact with Task objects to read their IDs and statuses. Task, on the other hand, is only responsible for managing its own data (storing information, updating status, and providing details), which it can fulfill entirely on its own without needing to know about TaskManager. This separation reflects the principle that Task is a simple data-holding entity, while TaskManager is the coordinator that operates on collections of Tasks.
